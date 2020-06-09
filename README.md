@@ -4,7 +4,7 @@
 
 We developed two tools to help understanding the failure of RL algorithmes on Swimmer benchmark : the "Vignettes" and the "Gradient study".
 The python code can be fount in directory "tools_developed".
-Those two scripts are based on CEM-RL code from Aloïs Pourhot.
+Those two scripts are based on CEM-RL code from Aloïs Pourchot.
 The "Vignette" tool is using random perturbation method to visualize the geometry of the objective function arount an actor.
 The "Gradient study" tool displays the geometry of objective function on the direction followed by the algorithm, so the estimated gradient in case of TD3. 
 Dot product indication helps to understang the behavior of the algorithme.
