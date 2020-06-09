@@ -212,8 +212,8 @@ if __name__ == "__main__":
 	parser.add_argument('--layer_norm', dest='layer_norm', action='store_true') #for initializing the actor
 	parser.add_argument('--discount', default=0.99, type=float) #for initializing the actor, not used really
 	parser.add_argument('--minalpha', default=0.0, type=float)# start value for alpha, good value : 0.0
-	parser.add_argument('--maxalpha', default=10, type=float)# end value for alpha, good value : precise 120, fast 100, ultrafast 100
-	parser.add_argument('--stepalpha', default=0.5, type=float)# step for alpha in the loop, good value : precise 1, fast 2, ultrafast 3
+	parser.add_argument('--maxalpha', default=10, type=float)# end value for alpha, good value : 10
+	parser.add_argument('--stepalpha', default=0.5, type=float)# step for alpha in the loop, good value : 0.5
 	parser.add_argument('--eval_maxiter', default=1000, type=float)# number of steps for the evaluation.
 	parser.add_argument('--min_colormap', default=-10, type=int)# min score value for colormap used (depend of benchmark used)
 	parser.add_argument('--max_colormap', default=360, type=int)# max score value for colormap used (depend of benchmark used)
