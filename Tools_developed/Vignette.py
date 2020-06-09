@@ -326,8 +326,8 @@ if __name__ == "__main__":
 	parser.add_argument('--nb_lines', default=60, type=int)# number of directions generated,good value : precise 100, fast 60, ultrafast 50
 	parser.add_argument('--discount', default=0.99, type=float) #for initializing the actor, not used really
 	parser.add_argument('--minalpha', default=0.0, type=float)# start value for alpha, good value : 0.0
-	parser.add_argument('--maxalpha', default=10, type=float)# end value for alpha, good value : precise 120, fast 100, ultrafast 100
-	parser.add_argument('--stepalpha', default=0.25, type=float)# step for alpha in the loop, good value : precise 1, fast 2, ultrafast 3
+	parser.add_argument('--maxalpha', default=10, type=float)# end value for alpha, good value : large 100, around actor 10
+	parser.add_argument('--stepalpha', default=0.25, type=float)# step for alpha in the loop, good value : precise 0.5 or 1, less precise 2 or 3
 	parser.add_argument('--eval_maxiter', default=1000, type=float)# number of steps for the evaluation. Depends on environment.
 	parser.add_argument('--min_colormap', default=-10, type=int)# min score value for colormap used (depend of benchmark used)
 	parser.add_argument('--max_colormap', default=360, type=int)# max score value for colormap used (depend of benchmark used)
