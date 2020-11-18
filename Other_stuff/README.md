@@ -1,4 +1,4 @@
-# CEM-RL
+# Cose bases
 Pytorch implementation of CEM-RL: https://arxiv.org/pdf/1810.01222.pdf
 
 To reproduce the results of the paper:
