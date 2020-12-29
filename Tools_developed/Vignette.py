@@ -82,9 +82,9 @@ def evaluate(actor, env, memory=None, n_episodes=1, random=False, noise=None, re
     """
 
     if not random:
-        def policy(state): # Prise de décision de l'action à effectuer => ça nous intéresse
+        def policy(state):
             state = FloatTensor(state.reshape(-1))
-            action = actor(state).cpu().data.numpy().flatten() # ???
+            action = actor(state).cpu().data.numpy().flatten()
 
             if noise is not None:
                 action += noise.sample()
