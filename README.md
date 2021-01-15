@@ -2,7 +2,7 @@
 
 ## Tools developed
 
-We developed two tools to help understanding the failure of RL algorithms on Swimmer benchmark : the "Vignettes" and the "Gradient study".
+We developed two tools to help understanding the failure of RL algorithms on Swimmer benchmark : the "Vignette" and the "Gradient study".
 The python code can be found in directory "Tools_developed".
 Those two scripts are based on CEM-RL code from Aloïs Pourchot.
 The "Vignette" tool is using random perturbation method to visualize the geometry of the objective function around an actor.
