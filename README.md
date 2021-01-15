@@ -46,7 +46,7 @@ Another version of the "Vignette" and the "Gradient study" adapted for Atari env
 	--step_iter, default=1000, type=int : iteration step between two consecutive actor pkl files to load
 	--output_filename, default="gradient_output.png", type=str : name of the output file to create
 
-## Use Vignette.py
+### Use Vignette.py
 
 You can check the comments in the code to understand all the parameters used.
 Suppose you have a policy parameters file in a directory "my_parameters" beside the python code, and the policy parameters filename is "params1" (a pkl file), just run :
@@ -63,7 +63,7 @@ If you want to compute more or less directions around the parameters, you can tu
 	
 Note that reducing maxalpha, reducing nb_lines, and increasing stepalpha reduces the computation time.
 
-## Use Gradient_study.py
+### Use Gradient_study.py
 
 Parameters are quite similar for gradient_study.py :
 Suppose you have 5 policy parameters files in a directory "my_parameters" beside the python code, and each pkl policy parameters filename is "params" followed by the iteration number (ex : params10, params20 ... params50).  
