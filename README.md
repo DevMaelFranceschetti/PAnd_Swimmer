@@ -46,6 +46,31 @@ Another version of the "Vignette" and the "Gradient study" adapted for Atari env
 	--step_iter, default=1000, type=int : iteration step between two consecutive actor pkl files to load
 	--output_filename, default="gradient_output.png", type=str : name of the output file to create
 
+## Use Vignette.py
+
+You can check the comments in the code to understand all the parameters used.
+Suppose you have a policy parameters file in a directory "my_parameters" beside the python code, and the policy parameters filename is "params1" (a pkl file), just run :
+
+	python3.6 vignette.py --env Swimmer-v2 --filename my_parameters --basename params --min_iter 1 --max_iter 1 --step_iter 1 
+
+If you want to run vignette for files "params1" and "params5" for example, you can run :  
+
+	python3.6 vignette.py --env Swimmer-v2 --filename my_parameters --basename params --min_iter 1 --max_iter 5 --step_iter 4 
+  
+If you want to compute more or less directions around the parameters, you can tune the nb_lines parameter. You can also decrease the precision and the number of parameters tested around by increasing the stepalpha parameter. You can also change the maximum distance to the studied parameters by changing the maxalpha value. See an example :  
+
+	python3.6 vignette.py --env Swimmer-v2 --filename my_parameters --basename params --min_iter 1 --max_iter 1 --step_iter 1 --nb_lines 30 --stepalpha 5 --maxalpha 120  
+	
+Note that reducing maxalpha, reducing nb_lines, and increasing stepalpha reduces the computation time.
+
+## Use Gradient_study.py
+
+Parameters are quite similar for gradient_study.py :
+Suppose you have 5 policy parameters files in a directory "my_parameters" beside the python code, and each pkl policy parameters filename is "params" followed by the iteration number (ex : params10, params20 ... params50).  
+You can run :  
+
+	python3.6 gradient_study.py --env Swimmer-v2 --filename my_parameters --basename params --min_iter 10 --max_iter 50 --step_iter 10
+
 
 ## TD3 modification
 
