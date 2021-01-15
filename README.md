@@ -7,7 +7,7 @@ The python code can be found in directory "Tools_developed".
 Those two scripts are based on CEM-RL code from Aloïs Pourchot.
 The "Vignette" tool is using random perturbation method to visualize the geometry of the objective function around an actor.
 The "Gradient study" tool displays the geometry of objective function on the direction followed by the algorithm, so the estimated gradient in case of TD3. 
-Dot product indication helps to understand the behavior of the algorithm.
+Dot product indication helps to understand the behavior of the algorithm. See the paper for more details and explanations.
 
 Those tools needs Mujoco and Swimmer to be installed, and the code based on CEM-RL to be present in the same directory than the tools.
 
