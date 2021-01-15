@@ -74,6 +74,6 @@ You can run :
 
 ## TD3 modification
 
-We propose a modification of the initial settings of TD3 to achieve good performance on Swimmer: 
-use discount = 1 and use start_steps = 20000, removing the update from TD3 before start_steps iterations.
+We are proposing a modification of the initial settings of TD3 to achieve good performance on Swimmer: 
+use discount = 1 (or very close to 1) and use start_steps = 20000, removing the update from TD3 before start_steps iterations.
 See the paper for more details and explanations.
